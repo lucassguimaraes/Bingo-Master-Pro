@@ -5,8 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      // ADICIONE ESTA LINHA ABAIXO:
-      base: '/Bingo-Master-Pro/', 
+      // Isso força o Vite a usar caminhos relativos, essencial para o GitHub Pages
+      base: './', 
       server: {
         port: 3000,
         host: '0.0.0.0',

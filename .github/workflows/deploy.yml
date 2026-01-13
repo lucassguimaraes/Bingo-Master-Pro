@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # Verifique se sua branch se chama 'main' ou 'master'
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          # Removi a linha do cache que causava o erro técnico
 
       - name: Install dependencies
         run: npm install

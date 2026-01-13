@@ -1,0 +1,5 @@
+{
+  "name": "Bingo Master - Gerador de Bingo Customizado",
+  "description": "Um gerador de cartelas de bingo profissional com suporte a imagens, exportação em PNG e folha de sorteio para impressão.",
+  "requestFramePermissions": []
+}
